@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link Generator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .container {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="#" id="genform">
+      <div class="mb-3">
+        <label for="csvurl" class="form-label">CSV Fetch URL</label>
+        <input
+          type="text"
+          class="form-control"
+          id="csvurl"
+          placeholder="example.com"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="customcss" class="form-label">Custom CSS</label>
+        <textarea class="form-control" id="customcss" rows="3"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="rowfilter" class="form-label">Row Filter</label>
+        <input
+          type="text"
+          class="form-control"
+          id="rowfilter"
+          placeholder="10"
+        />
+      </div>
+      <div class="mb-3">
+        <button type="submit" class="btn btn-primary mb-3">Generate</button>
+      </div>
+
+      <div class="mb-3">
+        <input
+          type="text"
+          class="form-control"
+          id="result"
+          disabled
+        />
+      </div>
+      <a href="#" id="finalurl" target="_blank"></a>
+    </form>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="generator.js"></script>
+</html>
