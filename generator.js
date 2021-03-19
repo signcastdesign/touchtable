@@ -1,4 +1,8 @@
 $(document).ready(function () {
+var pass = prompt("Enter password");
+if(pass != "b9rf2_FPK24tuQAC"){
+    window.location.href = "./accessdenied.html";
+}
   $("#genform").submit(function (e) {
     e.preventDefault();
     var settings = {};
