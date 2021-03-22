@@ -25,6 +25,7 @@ display: none;
 }
 
 CSS for Dark
+
 *{
 background-color: #121212 !important;
 color: white !important;
