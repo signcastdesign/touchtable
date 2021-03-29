@@ -1,6 +1,6 @@
 Mar 19, 02:49 PM
 
-http://touchtable.surge.sh/linkgenerator.html
+https://touchtable.surge.sh/linkgenerator.html
 
 pass : b9rf2_FPK24tuQAC
 
